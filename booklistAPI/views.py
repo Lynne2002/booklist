@@ -9,3 +9,9 @@ def books(request):
     return Response('List of the books',
                     status=status.HTTP_200_OK)
 
+class Orders():
+    @staticmethod
+    @api_view()
+    def listOrders(request):
+        return Response({'message':'list of orders'},200)
+

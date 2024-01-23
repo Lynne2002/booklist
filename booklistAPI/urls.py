@@ -1,5 +1,10 @@
 from django.urls import path
 from . import views
+""" from rest_framework.routers import SimpleRouter
+
+router = SimpleRouter(trailing_slash=False)
+router.register('booksrouter', views.books, basename='booksrouter') """
+
 urlpatterns =[
     path('books/', views.books),
     path('orders', views.Orders.listOrders),
@@ -17,5 +22,6 @@ urlpatterns =[
         'patch': 'partial_update',
         'delete': 'destroy'
         }
-    ))
+    )),
+   """  router.urls """
 ]

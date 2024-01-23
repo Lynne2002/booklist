@@ -1,8 +1,9 @@
 from django.urls import path
 from . import views
-""" from rest_framework.routers import SimpleRouter
+""" from rest_framework.routers import SimpleRouter, DefaultRouter
 
 router = SimpleRouter(trailing_slash=False)
+router = DefaultRouter(trailing_slash=False)
 router.register('booksrouter', views.books, basename='booksrouter') """
 
 urlpatterns =[

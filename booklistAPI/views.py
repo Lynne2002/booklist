@@ -31,7 +31,7 @@ class BookList(APIView):
         return Response({"message": "List of the books"}, status.HTTP_200_OK)
     
     def post(self, request):
-        return Response({"message": "new book created"}, status.HTTP_200_OK)
+        return Response({"title": request.data.get('title')}, status.HTTP_200_OK)
 
 class BookView_viewsets(viewsets.ViewSet):
     def list(self, request):

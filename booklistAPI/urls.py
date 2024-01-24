@@ -24,5 +24,5 @@ urlpatterns =[
         'delete': 'destroy'
         }
     )),
-   """  router.urls """
+    path("booklist", views.BookList.as_view()),
 ]
